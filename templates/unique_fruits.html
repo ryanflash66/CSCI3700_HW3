@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unique Fruits</title>
+</head>
+<body>
+    <h1>Unique Fruits from Basket A and Basket B</h1>
+    <table border="1">
+        <tr>
+            <th>Basket A</th>
+            <th>Basket B</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    {% for fruit in fruits["Basket A"] %}
+                        <li>{{ fruit }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    {% for fruit in fruits["Basket B"] %}
+                        <li>{{ fruit }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
